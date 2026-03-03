@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <title>Portfolio — Eliel Poster</title>
+</head>
+<body>
+
+    <div class="entete">
+        <div class="logo">
+            <a href="index.html">
+                <img src="LOGO.png" alt="Logo Eliel Poster">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#accueil">Accueil</a></li>
+                <li><a href="index.html#apropos">À propos</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="portfolio.html" class="nav-actif">Réalisations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <!-- Overlay sombre -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Menu mobile -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <ul>
+            <li><a href="index.html#accueil" class="mobile-lien">Accueil</a></li>
+            <li><a href="index.html#apropos" class="mobile-lien">À propos</a></li>
+            <li><a href="index.html#services" class="mobile-lien">Services</a></li>
+            <li><a href="portfolio.html" class="mobile-lien">Réalisations</a></li>
+            <li><a href="contact.html" class="mobile-lien">Contact</a></li>
+        </ul>
+        <a href="devis.html" class="btn-mobile-cta">Demander un devis</a>
+    </div>
+
+    <!-- PAGE EN SERVICE -->
+    <section class="en-service">
+        <div class="en-service-inner">
+            <div class="en-service-badge">En cours</div>
+            <h1>Portfolio <em>en construction</em></h1>
+            <p>Nous préparons quelque chose de beau pour vous. Notre portfolio sera bientôt en ligne avec l'ensemble de nos réalisations.</p>
+
+            <div class="en-service-cta">
+                <p class="en-service-cta-texte">En attendant, vous pouvez nous contacter ou réserver un devis.</p>
+                <div class="en-service-btns">
+                    <a href="contact.html" class="btn-hero-outline">Nous contacter</a>
+                    <a href="devis.html" class="btn-hero">Réserver un devis</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <span class="footer-brand">Eliel <span>Poster</span></span>
+            <p>Agence de communication créative</p>
+            <p>Votre image, notre mission</p>
+        </div>
+        <div class="footer-contact">
+            <p>Contact : <a href="mailto:postereliel@gmail.com">postereliel@gmail.com</a></p>
+            <p><a href="tel:+2250576224680">+225 0576 224 680</a></p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger   = document.getElementById('hamburger');
+        const mobileMenu  = document.getElementById('mobileMenu');
+        const overlay     = document.getElementById('menuOverlay');
+        const mobileLiens = document.querySelectorAll('.mobile-lien');
+
+        function ouvrirMenu() {
+            hamburger.classList.add('ouvert');
+            mobileMenu.classList.add('ouvert');
+            overlay.classList.add('ouvert');
+            hamburger.setAttribute('aria-expanded', 'true');
+            mobileMenu.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function fermerMenu() {
+            hamburger.classList.remove('ouvert');
+            mobileMenu.classList.remove('ouvert');
+            overlay.classList.remove('ouvert');
+            hamburger.setAttribute('aria-expanded', 'false');
+            mobileMenu.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.contains('ouvert') ? fermerMenu() : ouvrirMenu();
+        });
+
+        overlay.addEventListener('click', fermerMenu);
+        mobileLiens.forEach(lien => lien.addEventListener('click', fermerMenu));
+
+        window.addEventListener('scroll', () => {
+            document.querySelector('.entete').classList.toggle('entete--scroll', window.scrollY > 30);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+ -- HERO -->
+    <section class="portfolio-hero">
+        <div class="portfolio-hero-inner">
+            <p class="section-label">Nos travaux</p>
+            <h1>Notre <em>portfolio</em></h1>
+            <p>Chaque projet est une histoire. Découvrez comment nous avons accompagné nos clients dans la construction d'une image forte, cohérente et mémorable.</p>
+        </div>
+        <div class="portfolio-stats">
+            <div class="stat-item">
+                <strong data-count="48" data-suffix="+">15+</strong>
+                <span>Projets livrés</span>
+            </div>
+            <div class="stat-item">
+                <strong data-count="32" data-suffix="+">25+</strong>
+                <span>Clients satisfaits</span>
+            </div>
+            <div class="stat-item">
+                <strong data-count="3" data-suffix=" ans">5 ans</strong>
+                <span>D'expérience</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FILTRES -->
+    <section class="portfolio-filtres-section">
+        <div class="filtres-wrap">
+            <button class="filtre-btn filtre-btn--actif" data-filtre="tous">Tous</button>
+            <button class="filtre-btn" data-filtre="web">Sites web</button>
+            <button class="filtre-btn" data-filtre="design">Design graphique</button>
+            <button class="filtre-btn" data-filtre="multimedia">Multimédias</button>
+            <button class="filtre-btn" data-filtre="identite">Identité visuelle</button>
+        </div>
+    </section>
+
+    <!-- GRILLE PROJETS -->
+    <section class="portfolio-section">
+        <div class="projets-grid" id="projetsGrid">
+
+            <!-- Projet 1 — grand -->
+            <article class="projet-card projet-card--large" data-categorie="web">
+                <div class="projet-visuel">
+                    <div class="projet-placeholder">
+                        <img src="carte graphique.png" alt="charte graphique">
+                        <span>CHARTE GRAPHIQUE</span>
+                    </div>
+                    <div class="projet-overlay">
+                        <span class="projet-tag">Chate graphique</span>
+                        <h3>Notre charte Graphique</h3>
+                        <p>Conception complète d'unU portfoliot.</p>
+                        <a href="CHARTE GRAPHIQUE.pdf" class="btn-projet">Voir le projet →</a>
+                    </div>
+                </div>
+                <div class="projet-meta">
+                    <span class="projet-categorie">Sites web</span>
+                    <h3 class="projet-titre">Portfolio</h3>
+                    <p class="projet-desc">Conception complète d'un pour u.</p>
+                </div>
+            </article>
+
+            <!-- Projet 4 — grand -->
+            <article class="projet-card projet-card--large" data-categorie="identite">
+                <div class="projet-visuel">
+                    <div class="projet-placeholder" style="background: linear-gradient(135deg, #1b5e20 0%, #f57f17 100%);">
+                        <span>Identité</span>
+                    </div>
+                    <div class="projet-overlay">
+                        <span class="projet-tag">Identité visuelle</span>
+                        <h3>Branding complet Agro-CI</h3>
+                        <p>Stratégie de marque, logo, charte graphique et kit de communication digitale.</p>
+                        <a href="contact.html" class="btn-projet">Voir le projet →</a>
+                    </div>
+                </div>
+                <div class="projet-meta">
+                    <span class="projet-categorie">Identité visuelle</span>
+                    <h3 class="projet-titre">Branding complet Agro-CI</h3>
+                    <p class="projet-desc">Stratégie de marque, logo, charte graphique et kit de communication digitale.</p>
+                </div>
+            </article>
+
+            <!-- Projet 5 -->
+            <article class="projet-card" data-categorie="web">
+                <div class="projet-visuel">
+                    <div class="projet-placeholder" style="background: linear-gradient(135deg, #37474f 0%, #b71c1c 100%);">
+                        <span>Site Web</span>
+                    </div>
+                    <div class="projet-overlay">
+                        <span class="projet-tag">Sites web</span>
+                        <h3>Portfolio artiste musicien</h3>
+                        <p>Site vitrine pour un artiste musical avec intégration de lecteur audio.</p>
+                        <a href="contact.html" class="btn-projet">Voir le projet →</a>
+                    </div>
+                </div>
+                <div class="projet-meta">
+                    <span class="projet-categorie">Sites web</span>
+                    <h3 class="projet-titre">Portfolio artiste musicien</h3>
+                    <p class="projet-desc">Site vitrine pour un artiste musical avec intégration de lecteur audio.</p>
+                </div>
+            </article>
+
+ 
+
+        <!-- MESSAGE AUCUN RÉSULTAT -->
+        <div class="no-result" id="noResult" style="display:none;">
+            <p>Aucun projet dans cette catégorie pour le moment.</p>
+            <button class="btn-hero" onclick="resetFiltre()">Voir tous les projets</button>
+        </div>
+
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="portfolio-cta">
+        <div class="portfolio-cta-inner">
+            <h2>Votre projet sera notre prochain chef-d'œuvre.</h2>
+            <p>Discutons de vos besoins et construisons ensemble quelque chose d'unique et d'impactant.</p>
+            <div class="cta-btns">
+                <a href="devis.html" class="btn-hero">Demander un devis</a>
+                <a href="contact.html" class="btn-hero-outline">Nous contacter</a>
+            </div>
+        </div>
+    </section>     
+      
+            <!-- Projet 2 -->
+            <article class="projet-card" data-categorie="design">
+                <div class="projet-visuel">
+                    <div class="projet-placeholder" style="background: linear-gradient(135deg, #d32f2f 0%, #7b1fa2 100%);">
+                        <span>Design</span>
+                    </div>
+                    <div class="projet-overlay">
+                        <span class="projet-tag">Design graphique</span>
+                        <h3>Identité Restau Tropical</h3>
+                        <p>Logo, charte couleurs et supports de communication pour un restaurant.</p>
+                        <a href="contact.html" class="btn-projet">Voir le projet →</a>
+                    </div>
+                </div>
+                <div class="projet-meta">
+                    <span class="projet-categorie">Design graphique</span>
+                    <h3 class="projet-titre">Identité Restau Tropical</h3>
+                    <p class="projet-desc">Logo, charte couleurs et supports print pour un restaurant abidjanais.</p>
+                </div>
+            </article>
+
+            <!-- Projet 3 -->
+            <article class="projet-card" data-categorie="multimedia">
+                <div class="projet-visuel">
+                    <div class="projet-placeholder" style="background: linear-gradient(135deg, #0d47a1 0%, #00897b 100%);">
+                        <span>Vidéo</span>
+                    </div>
+                    <div class="projet-overlay">
+                        <span class="projet-tag">Multimédias</span>
+                        <h3>Clip promotionnel ONG</h3>
+                        <p>Montage vidéo et habillage sonore pour une campagne de sensibilisation.</p>
+                        <a href="contact.html" class="btn-projet">Voir le projet →</a>
+                    </div>
+                </div>
+                <div class="projet-meta">
+                    <span class="projet-categorie">Multimédias</span>
+                    <h3 class="projet-titre">Clip promotionnel ONG</h3>
+                    <p class="projet-desc">Montage vidéo et habillage sonore pour une campagne de sensibilisation.</p>
+                </div>
+            </article>
+
+           <!-- Projet 6 -->
+            <article class="projet-card" data-categorie="design">
+                <div class="projet-visuel">
+                    <div class="projet-placeholder" style="background: linear-gradient(135deg, #880e4f 0%, #f57f17 100%);">
+                        <span>Affiches</span>
+                    </div>
+                    <div class="projet-overlay">
+                        <span class="projet-tag">Design graphique</span>
+                        <h3>Campagne affiches événement</h3>
+                        <p>Série d'affiches et visuels réseaux sociaux pour un festival culturel.</p>
+                        <a href="contact.html" class="btn-projet">Voir le projet →</a>
+                    </div>
+                </div>
+                <div class="projet-meta">
+                    <span class="projet-categorie">Design graphique</span>
+                    <h3 class="projet-titre">Campagne affiches événement</h3>
+                    <p class="projet-desc">Série d'affiches et visuels réseaux sociaux pour un festival culturel.</p>
+                </div>
+            </article>
+
+            <!-- Projet 7 -->
+            <article class="projet-card" data-categorie="multimedia">
+                <div class="projet-visuel">
+                    <div class="projet-placeholder" style="background: linear-gradient(135deg, #263238 0%, #00acc1 100%);">
+                        <span>Audio</span>
+                    </div>
+                    <div class="projet-overlay">
+                        <span class="projet-tag">Multimédias</span>
+                        <h3>Production jingle radio</h3>
+                        <p>Création et production d'un jingle publicitaire pour une marque locale.</p>
+                        <a href="contact.html" class="btn-projet">Voir le projet →</a>
+                    </div>
+                </div>
+                <div class="projet-meta">
+                    <span class="projet-categorie">Multimédias</span>
+                    <h3 class="projet-titre">Production jingle radio</h3>
+                    <p class="projet-desc">Création et production d'un jingle publicitaire pour une marque locale.</p>
+                </div>
+            </article>
+
+            <!-- Projet 8 -->
+            <article class="projet-card" data-categorie="web">
+                <div class="projet-visuel">
+                    <div class="projet-placeholder" style="background: linear-gradient(135deg, #4a148c 0%, #d32f2f 100%);">
+                        <span>Site Web</span>
+                    </div>
+                    <div class="projet-overlay">
+                        <span class="projet-tag">Sites web</span>
+                        <h3>Site institutionnel ONG</h3>
+                        <p>Refonte complète du site web d'une organisation non gouvernementale.</p>
+                        <a href="contact.html" class="btn-projet">Voir le projet →</a>
+                    </div>
+                </div>
+                <div class="projet-meta">
+                    <span class="projet-categorie">Sites web</span>
+                    <h3 class="projet-titre">Site institutionnel ONG</h3>
+                    <p class="projet-desc">Refonte complète du site web d'une organisation non gouvernementale.</p>
+                </div>
+            </article>
+
+        </div>   
